@@ -20,7 +20,6 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         tableView.delegate = self
         // Do any additional setup after loading the view, typically from a nib.
         
-        print("I AM HERE")
         
         let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed")!
         let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
@@ -65,6 +64,22 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         cell.posterView.af_setImage(withURL: posterUrl!)
         
         return cell
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender:  Any?) {
+        //sender is the cell sending the UITableview cell
+        //Get new view controller usign segue.destinaton
+        //pass selected objects
+        
+        //find selected movie
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPath(for: cell)!
+        let movie = movies[indexPath.row]
+        //pass selected movie details to view contoller
+        let detailsViewController = segue.destination as! MoviedetailsViewController
+        detailsViewController.movie = movie
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+        
     }
     
 
