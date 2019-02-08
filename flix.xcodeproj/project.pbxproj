@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		428EAB58A0EBD71244F0A4AD /* Pods_flixTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 866378CF92227F0003101A13 /* Pods_flixTests.framework */; };
 		9ABB6F03EAE76774A6FEC440 /* Pods_flixUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ECA7F1CAB44BB8B9B444167 /* Pods_flixUITests.framework */; };
+		BC2DE266220CFB9000386740 /* movieGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2DE265220CFB9000386740 /* movieGridViewController.swift */; };
+		BC2DE268220CFECE00386740 /* MovieGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2DE267220CFECE00386740 /* MovieGridCell.swift */; };
+		BC2DE26A220D071B00386740 /* SuperheroDetailsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2DE269220D071B00386740 /* SuperheroDetailsCollectionViewCell.swift */; };
 		BC73ED6421FFB4F900985FDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC73ED6321FFB4F900985FDF /* AppDelegate.swift */; };
 		BC73ED6621FFB4F900985FDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC73ED6521FFB4F900985FDF /* ViewController.swift */; };
 		BC73ED6921FFB4F900985FDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC73ED6721FFB4F900985FDF /* Main.storyboard */; };
@@ -48,6 +51,9 @@
 		7AF52495D99904FC3E1D5BAD /* Pods-flix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flix.debug.xcconfig"; path = "Pods/Target Support Files/Pods-flix/Pods-flix.debug.xcconfig"; sourceTree = "<group>"; };
 		7ECA7F1CAB44BB8B9B444167 /* Pods_flixUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_flixUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		866378CF92227F0003101A13 /* Pods_flixTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_flixTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC2DE265220CFB9000386740 /* movieGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = movieGridViewController.swift; sourceTree = "<group>"; };
+		BC2DE267220CFECE00386740 /* MovieGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGridCell.swift; sourceTree = "<group>"; };
+		BC2DE269220D071B00386740 /* SuperheroDetailsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperheroDetailsCollectionViewCell.swift; sourceTree = "<group>"; };
 		BC73ED6021FFB4F900985FDF /* flix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC73ED6321FFB4F900985FDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC73ED6521FFB4F900985FDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -142,6 +148,9 @@
 				BC73ED9121FFB8CF00985FDF /* MoviesViewController.swift */,
 				BC73ED9321FFC5A200985FDF /* MovieCell.swift */,
 				BC7F7630220900E700BDA26F /* MoviedetailsViewController.swift */,
+				BC2DE265220CFB9000386740 /* movieGridViewController.swift */,
+				BC2DE267220CFECE00386740 /* MovieGridCell.swift */,
+				BC2DE269220D071B00386740 /* SuperheroDetailsCollectionViewCell.swift */,
 			);
 			path = flix;
 			sourceTree = "<group>";
@@ -407,6 +416,9 @@
 				BC73ED9421FFC5A200985FDF /* MovieCell.swift in Sources */,
 				BC7F7631220900E700BDA26F /* MoviedetailsViewController.swift in Sources */,
 				BC73ED9221FFB8CF00985FDF /* MoviesViewController.swift in Sources */,
+				BC2DE26A220D071B00386740 /* SuperheroDetailsCollectionViewCell.swift in Sources */,
+				BC2DE266220CFB9000386740 /* movieGridViewController.swift in Sources */,
+				BC2DE268220CFECE00386740 /* MovieGridCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
