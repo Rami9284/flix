@@ -1,31 +1,28 @@
 //
-//  MoviedetailsViewController.swift
+//  SuperheroDetailsViewController.swift
 //  flix
 //
-//  Created by Judith Ramirez on 2/4/19.
+//  Created by Judith Ramirez on 2/7/19.
 //  Copyright © 2019 Judith Ramirez. All rights reserved.
 //
 
 import UIKit
-import AlamofireImage
-import QuartzCore
 
+class SuperheroDetailsViewController: UIViewController {
 
-class MoviedetailsViewController: UIViewController {
-
+    
     @IBOutlet weak var synopsisLabel: UILabel!
+    
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var posterView: UIImageView!
+    
     @IBOutlet weak var backdropView: UIImageView!
+    
+    @IBOutlet weak var posterView: UIImageView!
     
     var movie: [String: Any]!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-        
-        
-        
         titleLabel.text = movie["title"] as? String
         titleLabel.sizeToFit()
         synopsisLabel.text = movie["overview"] as? String
@@ -35,14 +32,13 @@ class MoviedetailsViewController: UIViewController {
         let posterUrl = URL(string: baseUrl + posterPath)
         
         posterView.af_setImage(withURL: posterUrl!)
-      
+        
         posterView.layer.borderWidth = 1
         
         let backdropPath = movie["backdrop_path"] as! String
         let backdropUrl = URL(string: "https://image.tmdb.org/t/p/w780" + backdropPath)
         
         backdropView.af_setImage(withURL: backdropUrl!)
-        
     }
     
 
